@@ -144,7 +144,7 @@ function crypt(key, inputSkipped, cryptoOptions) {
 
 (async function main() {
   const cryptoOptions = getParams(process.argv, DEFAULT_OPTIONS);
-  if(checkParams(cryptoOptions, CRYPTO_MODES) === true) return;
+  if(checkParams(cryptoOptions, CRYPTO_MODES)) return;
 
   const input = await getBufferFile(cryptoOptions.input);
   const key = await getBufferFile(cryptoOptions.key);
