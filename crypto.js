@@ -1,4 +1,4 @@
-var fs = require('fs');
+const fs = require('fs');
 const { Buffer } = require('buffer');
 const aesjs = require('aes-js');
 
