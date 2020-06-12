@@ -59,7 +59,7 @@ function getParams(argv, options) {
 
 
 function help() {
-  console.log('\nUsage: node crypto [-h] -i INFILE -o OUTFILE\n\nCrypt a file with RC4 or AES.\n\nDefault(RC4): node crypto -s 54 -k t3-key.bin -i penguin-rc4.bmp -o penguin.bmp\nor: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-rc4.bmp -c RC4\nCTR: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-rc4.bmp -c CTR\nCBC: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-cbc.bmp -c CBC\nECB: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-ecb.bmp -c ECB');
+  console.log('\nUsage: node crypto [--help] -i INFILE -k FILEKEY [-o] OUTFILE [-s] SKIPNUMBER [-c] MODE\n\nCrypt a file with RC4 or AES.\n\nDefault(RC4): node crypto -s 54 -k t3-key.bin -i penguin-rc4.bmp -o penguin.bmp\nor: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-rc4.bmp -c RC4\nCTR: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-rc4.bmp -c CTR\nCBC: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-cbc.bmp -c CBC\nECB: node crypto -s 54 -k t3-key.bin -i penguin.bmp -o penguin-ecb.bmp -c ECB');
 }
 
 function checkParams(cryptoOptions, cryptoModes) {
